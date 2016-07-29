@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let timer = NSTimer.hk_scheduledTimerWith(timeInterval: 3,
+                                                  fireCallback: {
+                                                    print("fire")
+                                                  },
+                                                  shouldRepeats: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
